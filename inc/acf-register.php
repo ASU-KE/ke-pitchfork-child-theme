@@ -1,7 +1,7 @@
 <?php
 /**
  * Additional functions for Advanced Custom Fields.
- * 
+ *
  * Contents:
  *   - Load path for ACF groups from the parent.
  *   - Register custom blocks for the theme.

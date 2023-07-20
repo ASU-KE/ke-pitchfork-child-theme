@@ -412,7 +412,7 @@ gulp.task(
 /**
  * Copy UDS-Bootstrap-4 assets from node_modules.
  * Run: gulp upboot-tokens
- * 
+ *
  * Does the following:
  * 1. Copies the SASS files from the ASU bootstrap4-theme to /src
  *
