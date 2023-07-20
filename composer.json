@@ -1,6 +1,5 @@
 {
-	"name": "asu-ke-web-services/uds-wordpress-child-theme",
-	"description": "ASU Unity Design System WordPress Child Theme",
+	"name": "ASU-KE/ke-pitchfork",
 	"type": "wordpress-theme",
 	"license": "GPL-2.0-only",
 	"minimum-stability": "stable",
@@ -9,7 +8,7 @@
 		"theme",
 		"bootstrap"
 	],
-	"homepage": "https://github.com/asu-ke-web-services/uds-wordpress-child-theme",
+	"homepage": "https://github.com/ASU-KE/ke-pitchfork",
 	"require": {
 		"composer/installers": "^1.9",
 		"php": ">=5.6"
@@ -27,7 +26,7 @@
 		"lint:php": ["@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."]
 	},
 	"support": {
-		"issues": "https://github.com/asu-ke-web-services/uds-wordpress-child-theme/issues",
-		"source": "https://github.com/asu-ke-web-services/uds-wordpress-child-theme"
+		"issues": "https://github.com/ASU-KE/ke-pitchfork/issues",
+		"source": "https://github.com/ASU-KE/ke-pitchfork"
 	}
 }
