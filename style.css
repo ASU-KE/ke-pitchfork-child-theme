@@ -1,22 +1,22 @@
 /*
-Theme Name: Pitchfork Child Template
-Theme URI: https://github.com/asuengineering/pitchfork-child
-Author: ASU Engineering
-Author URI: https://github.com/asuengineering
-Description: Child theme template for UDS WordPress
-Version: 0.1.0
+Theme Name: KE Pitchfork
+Theme URI: https://github.com/ASU-KE/ke-pitchfork
+Author: ASU Knowledge Enterprise
+Author URI: https://rto.asu.edu/web-services/
+Description: Child theme for KE Pitchfork
+Version: 1.0.0
 
 Template: pitchfork
 
-GitHub Theme URI: [Insert your URL here if you want to support GitHub Updater]
+GitHub Theme URI: ASU-KE/ke-pitchfork
 
 License: GNU GPL version 2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: uds-wordpress-theme-child
+Text Domain: ke-pitchfork
 */
 
 /*
 Just like the parent theme, this file is only used to identify the theme in WordPress.
-- This theme's compiled CSS runs as a dependancy to the parent theme's compiled CSS. 
+- This theme's compiled CSS runs as a dependancy to the parent theme's compiled CSS.
 - The SASS source files for this child theme come configured to consume the UDS Bootstrap 4 variables from the parent.
 */
