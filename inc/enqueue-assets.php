@@ -2,7 +2,7 @@
 /**
  * Pitchfork child theme functions and definitions
  *
- * @package pitchfork-child
+ * @package ke-pitchfork
  */
 
  // Exit if accessed directly.
@@ -19,10 +19,10 @@ function pitchfork_child_scripts() {
 	$theme_version = $the_theme->get( 'Version' );
 
 	$css_child_version = $theme_version . '.' . filemtime( get_stylesheet_directory() . '/css/child-theme.min.css' );
-	wp_enqueue_style( 'pitchfork-child-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array( 'pitchfork-styles' ), $css_child_version );
+	wp_enqueue_style( 'ke-pitchfork-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array( 'pitchfork-styles' ), $css_child_version );
 
 	$js_child_version = $theme_version . '.' . filemtime( get_stylesheet_directory() . '/js/child-theme.js' );
-	wp_enqueue_style( 'pitchfork-child-styles', get_stylesheet_directory_uri() . '/js/child-theme.js', array( 'jquery' ), $js_child_version );
+	wp_enqueue_style( 'ke-pitchfork-styles', get_stylesheet_directory_uri() . '/js/child-theme.js', array( 'jquery' ), $js_child_version );
 }
 
 
@@ -34,6 +34,6 @@ function pitchfork_child_enqueue_editor_scripts() {
 	$theme_version = $the_theme->get( 'Version' );
 
     $css_child_version = $theme_version . '.' . filemtime( get_stylesheet_directory() . '/css/block-editor.min.css' );
-	wp_enqueue_style( 'pitchfork-child-blockeditor-styles', plugin_dir_url( __DIR__ ) . 'css/block-editor.min.css', array(), $css_child_version );
+	wp_enqueue_style( 'ke-pitchfork-blockeditor-styles', plugin_dir_url( __DIR__ ) . 'css/block-editor.min.css', array(), $css_child_version );
 
 }

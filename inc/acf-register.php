@@ -6,7 +6,7 @@
  *   - Load path for ACF groups from the parent.
  *   - Register custom blocks for the theme.
  *
- * @package pitchfork-child
+ * @package ke-pitchfork
  */
 
 /**
