@@ -4,6 +4,9 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
+// Copy external resource files (ASU Unity)
+const CopyPlugin = require("copy-webpack-plugin");
+
 // clean out build dir in-between builds
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -60,6 +63,15 @@ module.exports = [
           './js/build/*',
           './css/build/*'
         ]
+      }),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: "scss/",
+            context: "node_modules/@asu/bootstrap4-theme/src/",
+            to: path.resolve(__dirname, "resources/bootstrap4-theme/"),
+          }
+        ],
       }),
       // css extraction into dedicated file
       new MiniCssExtractPlugin({
