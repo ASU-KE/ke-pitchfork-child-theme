@@ -2,7 +2,7 @@
 /**
  * Pitchfork child theme functions and definitions
  *
- * @package pitchfork-child
+ * @package ke-pitchfork
  */
 
  // Exit if accessed directly.
@@ -11,29 +11,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-// Enqueue child scripts and styles.
-add_action( 'wp_enqueue_scripts', 'pitchfork_child_scripts' );
-function pitchfork_child_scripts() {
-	// Get the theme data.
-	$the_theme     = wp_get_theme();
-	$theme_version = $the_theme->get( 'Version' );
+// Enqueue child theme scripts and styles.
+function ke_pitchfork_enqueue_frontend() {
 
-	$css_child_version = $theme_version . '.' . filemtime( get_stylesheet_directory() . '/css/child-theme.min.css' );
-	wp_enqueue_style( 'pitchfork-child-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array( 'pitchfork-styles' ), $css_child_version );
+    $cssFilePath = glob( get_stylesheet_directory() . '/css/build/childTheme.min.*.css' );
+    $cssFileURI = get_stylesheet_directory_uri() . '/css/build/' . basename($cssFilePath[0]);
+    wp_enqueue_style( 'ke-pitchfork-styles', $cssFileURI );
 
-	$js_child_version = $theme_version . '.' . filemtime( get_stylesheet_directory() . '/js/child-theme.js' );
-	wp_enqueue_style( 'pitchfork-child-styles', get_stylesheet_directory_uri() . '/js/child-theme.js', array( 'jquery' ), $js_child_version );
-}
-
-
-// Enqueue to the admin. Block editor styles only.
-add_action('enqueue_block_editor_assets', 'pitchfork_child_enqueue_editor_scripts');
-function pitchfork_child_enqueue_editor_scripts() {
-
-	$the_theme     = wp_get_theme();
-	$theme_version = $the_theme->get( 'Version' );
-
-    $css_child_version = $theme_version . '.' . filemtime( get_stylesheet_directory() . '/css/block-editor.min.css' );
-	wp_enqueue_style( 'pitchfork-child-blockeditor-styles', plugin_dir_url( __DIR__ ) . 'css/block-editor.min.css', array(), $css_child_version );
+    $jsFilePath = glob( get_stylesheet_directory() . '/js/build/childTheme.min.*.js' );
+    $jsFileURI = get_stylesheet_directory_uri() . '/js/build/' . basename($jsFilePath[0]);
+    wp_enqueue_script( 'ke-pitchfork-scripts', $jsFileURI , null , null , true );
 
 }
+add_action( 'wp_enqueue_scripts', 'ke_pitchfork_enqueue_frontend' );
+
+
+// Enqueue the Block Editor styles only.
+function ke_pitchfork_enqueue_editor_styles() {
+
+    $cssFilePath = glob( get_stylesheet_directory() . '/css/build/blockEditor.min.*.css' );
+    $cssFileURI = get_stylesheet_directory_uri() . '/css/build/' . basename($cssFilePath[0]);
+    wp_enqueue_style( 'ke-pitchfork-blockeditor-styles', $cssFileURI );
+
+}
+add_action('enqueue_block_editor_assets', 'ke_pitchfork_enqueue_editor_styles');
