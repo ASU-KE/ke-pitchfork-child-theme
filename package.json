@@ -15,10 +15,12 @@
   "author": "ASU Knowledge Enterprise",
   "license": "MIT",
   "devDependencies": {
+    "@asu/bootstrap4-theme": "^1.11.1",
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
