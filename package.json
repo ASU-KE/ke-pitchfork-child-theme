@@ -1,6 +1,5 @@
 {
   "name": "ke-pitchfork",
-  "version": "1.0.0",
   "description": "Pitchfork theme with CSS/SASS and JavaScript compiled using webpack 5.",
   "main": "js/build/child-theme.js",
   "scripts": {
