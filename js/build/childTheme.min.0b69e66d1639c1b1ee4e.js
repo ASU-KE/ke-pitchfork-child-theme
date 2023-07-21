@@ -15,7 +15,7 @@
   \*******************************/
 /***/ (() => {
 
-eval("// Start your project's JS here.\n\n//# sourceURL=webpack://wp-barebone-theme-webpack5-sass/./js/src/child-theme.js?");
+eval("// Start your project's JS here.\n\n//# sourceURL=webpack://ke-pitchfork/./js/src/child-theme.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("// Start your project's JS here.\n\n//# sourceURL=webpack://wp-barebone-th
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://wp-barebone-theme-webpack5-sass/./css/src/child-theme.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://ke-pitchfork/./css/src/child-theme.scss?");
 
 /***/ })
 
