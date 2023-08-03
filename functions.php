@@ -31,3 +31,16 @@ if ( function_exists( 'register_block_pattern_category' ) ) {
 		)
 	);
 }
+
+/**
+ * Add block category for GFL Centers
+ * */
+if ( function_exists( 'register_block_pattern_category' ) ) {
+	register_block_pattern_category(
+		'gfl-center',
+		array(
+			'label' => __( 'GFL Center', 'ke-pitchfork' ),
+			'description' => __( 'Pages for GFL Centers', 'ke-pitchfork' ),
+		)
+	);
+}
