@@ -20,19 +20,6 @@ require get_stylesheet_directory() . '/inc/acf-register.php';
 add_theme_support( 'post-thumbnails', array( 'project' ) );
 
 /**
- * Add block category for KE Sitelets
- * */
-if ( function_exists( 'register_block_pattern_category' ) ) {
-	register_block_pattern_category(
-		'ke-sitelet',
-		array(
-			'label' => __( 'KE Sitelet', 'ke-pitchfork' ),
-			'description' => __( 'Pages for KE Sitelets', 'ke-pitchfork' ),
-		)
-	);
-}
-
-/**
  * Add block category for GFL Centers
  * */
 if ( function_exists( 'register_block_pattern_category' ) ) {
