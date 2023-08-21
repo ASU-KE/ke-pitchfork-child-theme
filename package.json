@@ -3,8 +3,8 @@
   "description": "Pitchfork theme with CSS/SASS and JavaScript compiled using webpack 5.",
   "main": "js/build/child-theme.js",
   "scripts": {
-    "build": "webpack --mode development",
-    "dist": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
     "watch": "webpack --watch --mode development"
   },
   "repository": {
