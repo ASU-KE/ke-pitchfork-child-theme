@@ -1,0 +1,18 @@
+/**
+The following styles were extracted from the Customizer in the original Swette
+site and were created by the Extra Small Design team as part of that site build.
+**/
+
+// Until we can update Pitchfork to 2.0, remove the default bottom margin from the hero block.
+div[class^='uds-hero'] {
+  margin-bottom: 0;
+}
+
+.card-horizontal .card-header > h3 {
+	margin-top: 16px;
+}
+
+.card-horizontal .card-header > h2 {
+	margin-top: 16px;
+}
+
