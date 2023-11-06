@@ -1,0 +1,49 @@
+/**
+ * These are fixes for making the anchor menu stick when it should stick, and
+ * stick WEHRE it should stick. Also contains our utility class for preventing
+ * the targets of anchor menu links not slide up under the menu itself
+ */
+
+ // Position the sticky menu based on breakpoints and whether or not the user is logged in.
+ @media only screen and (max-width: 991px) {
+  .uds-anchor-menu.uds-anchor-menu-expanded-lg.sticky{
+    top: 105px;
+  }
+
+  #wpadminbar ~ main .uds-anchor-menu.sticky {
+    top: 137px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .uds-anchor-menu.uds-anchor-menu-expanded-lg.sticky{
+    top: 89px;
+  }
+
+  #wpadminbar ~ main .uds-anchor-menu.sticky {
+    top: 121px;
+  }
+}
+
+
+ // Adds offset to items being linked to in an anchor menu.
+.anchor-menu-target:before {
+  position: relative;
+  display: block;
+  height: 120px;
+  content: '';
+  margin-top: -120px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+// A double-sized version if needed.
+.anchor-menu-target-large:before {
+  position: relative;
+  display: block;
+  height: 240px;
+  content: '';
+  margin-top: -240px;
+  visibility: hidden;
+  pointer-events: none;
+}
