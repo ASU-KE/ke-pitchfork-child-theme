@@ -12,7 +12,6 @@ get_header();
 ?>
 
 	<main id="skip-to-content" <?php post_class(); ?>>
-
 		<?php
 
 		while ( have_posts() ) {
