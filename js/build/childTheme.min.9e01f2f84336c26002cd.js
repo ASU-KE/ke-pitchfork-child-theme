@@ -1,0 +1,1 @@
+jQuery(document).ready((function(){jQuery(window).scroll((function(){var o=jQuery(".uds-anchor-menu");jQuery(window).scrollTop()<=256?o.removeClass("sticky"):o.addClass("sticky")}))}));
