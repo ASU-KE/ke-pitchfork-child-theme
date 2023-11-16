@@ -1,0 +1,80 @@
+/**
+The following styles were extracted from the Customizer in the original Swette
+site and were created by the Extra Small Design team as part of that site build.
+I have left their comments in place were possible, and marked my own.
+**/
+
+/* makes default background White instead of light gray */
+body {
+	background-color: white;
+}
+
+// Until we can update Pitchfork to 2.0, remove the default bottom margin from the hero block (Walt).
+div[class^='uds-hero'] {
+  margin-bottom: 0;
+}
+
+/* This was written for styling and re-sizing of horizontal card elements */
+.card-horizontal .card-header > h3 {
+	margin-top: 16px;
+}
+
+.card-horizontal .card-header > h2 {
+	margin-top: 16px;
+}
+
+/* Written to let story cards sit in a row and re-size correctly */
+.academic-container {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+/* This was written for styling and re-sizing of horizontal card elements */
+.card-horizontal .card-header>h3 {
+	margin-top: 16px;
+}
+
+.card-horizontal .card-header>h2 {
+	margin-top: 16px;
+}
+
+// (Walt): This is a result of not using actual cards, because you can't do that in a query loop.
+.project-cards .card-header {
+	flex-grow: 0;  // !important;
+}
+
+/* Black gradient over image testimonial block */
+.testimonial-overlay {
+	position: relative;
+}
+
+.testimonial-overlay::after {
+	content: ' ';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .25);
+	z-index: 1;
+}
+
+.testimonial-overlay .uds-testimonial {
+	position: relative;
+	z-index: 10;
+}
+
+/* makes content in card line up correctly added to the bottom to not override any other elements */
+@media screen and (min-width: 340px) {
+	.academic-card {
+		margin-top: 0 !important;
+	}
+}
+
+/* This fixed a part of the menu but not all of it. It still gets stuck to the very top of the page on scroll underneath the hero block */
+/* Commented out the margin line because this should be fixed in another update to the theme. */
+  .uds-anchor-menu {
+    margin-top: 0 !important;
+    border-bottom: none;
+  }

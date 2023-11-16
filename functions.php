@@ -16,4 +16,4 @@ require get_stylesheet_directory() . '/inc/acf-register.php';
 /**
  * Add Theme Support for Project Thumbnails
  * */
-add_theme_support( 'post-thumbnails', array( 'project' ) );
+add_theme_support( 'post-thumbnails' );

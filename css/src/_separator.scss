@@ -1,0 +1,7 @@
+/**
+ * Prevent the default border from showing up on the gold separator
+ */
+
+.wp-block-separator.is-style-copy-divider {
+  border: none;
+}

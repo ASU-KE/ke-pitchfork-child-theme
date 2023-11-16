@@ -1,0 +1,18 @@
+/**
+ * Styles for modifying the default presentation of user profiles.
+ */
+
+
+
+ /**
+  * On smaller screens, the people blocks turn vertical. This rule adds space
+  * between the image and profile text on those screens.
+  */
+
+@media (max-width: 768px) {
+  //
+  .uds-person-profile .person {
+    margin-top: 24px;
+  }
+}
+

@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+Unity hero: highlight/subtitle covers up letters fix
+
+The line height on hero H1's was not large enough to accomodate
+highlighted text, leading to letters with descenders ('g', 'y',
+etc.) being clipped. Upping the line height here to the mimimum
+size that will prevent clipping.
+
+Note: This is for Medium, Large and Extra Large breakpoints. We
+are not modifying mobile hero text here (yet, anyway).
+---------------------------------------------------------------*/
+@media screen and (min-width: $uds-breakpoint-md) {
+
+  // Increase line height on the hero H1 when we have a highlight applied.
+  div[class^="uds-hero"] > h1 span {
+    line-height: 4.5rem;
+  }
+
+  // For the sub-title, which does not change size on mobile, btw.
+  div[class^="uds-hero"] [role="doc-subtitle"] {
+    line-height: 1.7rem;
+  }
+}
